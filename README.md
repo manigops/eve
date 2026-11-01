@@ -1,492 +1,939 @@
-# EventCraft AI
 
-> Local-first, browser-native event planning assistant for weddings, birthdays, and community gatherings.
+i need a linkedin post
+Here is a professional LinkedIn post to showcase your EventCraft project, highlighting your development work, technical learning and innovation.
 
-EventCraft AI is a client-contained web application that delivers a complete event planning workspace directly inside your web browser. It combines archetype-driven planning templates, deterministic integer-cents budgeting, a phased task state machine with dependency resolution, multi-quote vendor tracking, and a conversational natural-language command interpreter.
+🚀 Introducing EventCraft – AI-Powered Event Planning & Management Platform!
 
-The application operates on a **100% browser-local architecture** powered by native IndexedDB. All event data, calculations, rules, and revisions execute entirely on the client with **zero application backend, zero database daemons, and zero external cloud AI dependencies**.
+I'm excited to share one of my development projects, EventCraft, designed to simplify the way events are planned, organized, and managed.
 
----
+🎯 What is EventCraft?
 
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.7.3-3178C6?style=flat-square&logo=typescript&logoColor=white)](tsconfig.json)
-[![Next.js](https://img.shields.io/badge/Next.js-15.2.1-000000?style=flat-square&logo=nextdotjs&logoColor=white)](next.config.js)
-[![React](https://img.shields.io/badge/React-19.0.0-61DAFB?style=flat-square&logo=react&logoColor=black)](package.json)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.17-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](tailwind.config.js)
-[![Vitest](https://img.shields.io/badge/Tests-76%20passed%20(9%20suites)-success?style=flat-square&logo=vitest&logoColor=white)](vitest.config.mts)
-[![Persistence](https://img.shields.io/badge/Persistence-IndexedDB%20v1%20(9%20Stores)-8A2BE2?style=flat-square)](src/lib/storage/indexed-db.ts)
-[![Architecture](https://img.shields.io/badge/Architecture-100%25%20Browser--Local%20%2F%20Zero--Network-10B981?style=flat-square)](src/lib/storage/local-repository.ts)
-[![License](https://img.shields.io/badge/License-Private-lightgrey?style=flat-square)](package.json)
+EventCraft is an integrated event management platform that brings the entire event lifecycle into one place, from initial planning to event-day operations.
 
----
+✨ Key Features:
+🔹 Smart Event Creation & Planning
+🔹 Budget Management & Expense Tracking
+🔹 Guest Management & RSVP Tracking
+🔹 Seating Arrangement Management
+🔹 Digital Invitations with QR Codes
+🔹 Vendor & Volunteer Coordination
+🔹 Task Scheduling & Progress Tracking
+🔹 Event Analytics and Reports
+🔹 Role-Based Dashboards
 
-## Table of Contents
+🛠️ Technology Stack:
+• Next.js
+• React
+• TypeScript
+• Tailwind CSS
+• IndexedDB
+• Zod
 
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Application Views and Routes](#application-views-and-routes)
-- [System Architecture](#system-architecture)
-- [Technology Stack](#technology-stack)
-- [Project Structure](#project-structure)
-- [Local Development Setup](#local-development-setup)
-- [Environment Variables](#environment-variables)
-- [Available Scripts and Testing](#available-scripts-and-testing)
-- [Data Storage and Privacy](#data-storage-and-privacy)
-- [Current Status and Roadmap](#current-status-and-roadmap)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+💡 One of the interesting aspects of this project is its rule-based intelligent planning engine, which generates event plans, schedules, budget recommendations, and task suggestions based on user inputs.
 
----
+Building EventCraft has been a valuable learning experience in frontend development, application architecture, database management, and problem-solving.
 
-## Overview
+This is more than just a project; it's an opportunity to turn an idea into a practical solution.
 
-### The Problem
-Traditional event planning often relies on fragmented tools: disconnected spreadsheets, arbitrary budget estimates prone to rounding errors, static checklists lacking dependency tracking, and unstructured vendor notes. Furthermore, modern cloud event planning platforms enforce mandatory subscriptions, account lock-in, and constant data sharing with third-party servers.
+🔗 GitHub Repository:
+https://github.com/manigops/EventCraft
 
-### The Solution
-EventCraft AI unifies the entire planning lifecycle into a single cohesive, highly responsive interface:
-- **Target Users**: Couples organizing weddings, families hosting milestone birthdays, non-profit organizers planning community fundraisers, and independent event coordinators.
-- **100% Browser-Local Reliability**: Operates entirely in the browser using native IndexedDB. No mandatory cloud accounts, no external database dependencies to install, and zero network latency.
-- **Financial Precision**: All financial calculations are tracked in exact integer cents, completely eliminating floating-point rounding errors and category reconciliation gaps.
-- **Structured Execution**: Tasks follow a formal state machine organized into chronological phases, complete with directed graph dependency validation to prevent scheduling conflicts.
-- **Deterministic Intelligence**: Generates structured blueprints, budgets, and itineraries using domain rule engines and pattern-matched command interpretation without cloud LLM inference or subscription dependencies.
+I look forward to improving it further and exploring new possibilities!
 
----
+#EventCraft #WebDevelopment #NextJS #ReactJS #TypeScript #AI #EventManagement #SoftwareDevelopment #ProjectShowcase #LearningByBuilding
 
-## Key Features
+My suggestion: Attach 2–3 screenshots of your actual deployed EventCraft dashboard, event creation page and budget management page. This will make your LinkedIn post more convincing.
 
-### 1. Archetype-Driven Event Wizard
-- Guided 5-step event creation flow supporting three distinct event archetypes:
-  - **Wedding**: Comprehensive vendor requirements, multi-phase ceremony and reception timelines, decor themes, and high-detail guest coordination.
-  - **Birthday**: Milestone celebration themes, entertainment schedules, activity coordination, and catering tracking.
-  - **Community Event**: Public gathering logistics, municipal permits, safety protocols, volunteer management, and accessible budget breakdowns.
-- Collects guest headcounts, target budgets, currency preferences, dates, and stylistic themes.
+i need a demovideo for this so give me a script
+For your EventCraft demo video, I recommend a 3–4 minute professional product demonstration. It should feel like a real software product launch, not just a screen recording.
 
-### 2. Exact-Cent Budget Allocation and Financial Ledger
-- **Integer-Cents Math**: Eliminates floating-point imprecision (`0.1 + 0.2 = 0.30000000000000004`) by computing all allocations, expenditures, and variances in integer minor units (cents).
-- **Proportional Archetype Splits**: Automatically divides target budgets across archetype-specific categories (e.g., Venue, Catering, Photography, Decor, Entertainment, Contingency) with exact remainder cents allocated to primary categories to guarantee a 100.00% balance.
-- **Expense Tracking**: Records individual expenses with payment tracking statuses (`PENDING`, `PAID`, `OVERDUE`), linked vendors, and real-time category variance monitoring.
+The video should demonstrate the actual application, explain its features, and show how EventCraft solves event-planning problems.
 
-### 3. Phased Task Management and Day-Of Runsheet
-- **5 Planning Phases**: Tasks progress logically through `PLANNING` &rarr; `BOOKING` &rarr; `PREPARATION` &rarr; `EVENT_DAY` &rarr; `POST_EVENT`.
-- **Dependency Graph Validation**: Enforces prerequisite constraints using a Depth-First Search (DFS) cycle-detection algorithm to ensure tasks cannot be marked complete out of order or blocked in circular deadlocks.
-- **Hour-by-Hour Run of Show**: Generates an event-day itinerary with exact time slots, lead coordinators, logistical notes, and role assignments.
+EventCraft – Demo Video Script
+Custom Wedding & Event Planner Web App Development | Scheduling & Vendor Management
 
-### 4. Vendor Directory and Quotation Comparison
-- Directory supporting 11 vendor categories (Catering, Photography, Videography, Florist, Music/DJ, Venue, Hair & Makeup, Officiant, Transportation, Rentals, Planning).
-- Multi-quote comparison tracking: records proposals, calculates minimum, average, and maximum bid metrics, and supports single-click quotation acceptance.
+EVENTCRAFT
+Plan Smarter. Organize Better. Celebrate More.
 
-### 5. Conversational Command Interpreter
-- Client-side natural language command parser allowing users to update their plan via quick text commands without clicking through multiple menus:
-  - `add task [title]` &rarr; Adds a new task to the appropriate phase.
-  - `complete task [title]` &rarr; Checks prerequisites and marks the task as complete.
-  - `change date to [YYYY-MM-DD]` &rarr; Updates the event target date and recalculates dependent milestones.
-  - `adjust budget to [amount]` &rarr; Reallocates category limits and updates ledger variances.
-  - `add expense [title] [amount]` &rarr; Creates an expense item against the matching budget category.
-  - `show remaining budget` &rarr; Returns an instant breakdown of allocated vs. spent funds.
-  - `regenerate plan` &rarr; Re-runs the deterministic blueprint generator with confirmation guards.
-  - `update theme [theme description]` &rarr; Updates event styling and decor direction.
+Suggested video duration: 3–4 minutes
 
-### 6. Local Profile Management and Data Portability
-- **Profiles**: Local user profiles with salt-hashed passcodes for convenient multi-user workspace separation on shared devices.
-- **JSON Backup Export**: Download the entire application state (all 9 IndexedDB stores) into a timestamped `.json` file (`eventcraft-backup-YYYY-MM-DD.json`).
-- **Schema-Validated Restore**: Import backups with runtime structural validation using Zod schemas.
-- **Database Reset**: Safe one-click purge to clear local storage and start fresh.
+Scene 1 – Introduction (0:00–0:20)
+Opening
+Visual: EventCraft logo, attractive event footage, then application homepage.
 
----
+Voice-over:
 
-## Liquid Glass Design System
+"Planning an event involves multiple responsibilities, from managing budgets and guests to coordinating vendors and schedules.
 
-EventCraft AI features a cohesive, premium **Liquid Glass** user interface designed for depth, optical translucency, and spatial hierarchy:
+What if everything could be managed in one place?
 
-### Surface Hierarchy
-- **Canvas / Ambient Backdrop**: Multi-stop radial ambient light mesh combining violet (`rgba(139, 92, 246, 0.12)`), indigo (`rgba(99, 102, 241, 0.10)`), and amber (`rgba(245, 158, 11, 0.06)`) glow fields layered over a microscopic hardware-accelerated refraction grid.
-- **Navigation Shell**: Frosted sticky headers (`.glass-header`) and luminous sidebars (`.glass-sidebar`) with multi-layer backdrop blur (`blur(20px)`), subtle translucent borders, and glowing active route indicator pills.
-- **Primary Glass Cards**: Semi-transparent surface containers (`.glass-card`, `.glass-surface`) utilizing `backdrop-filter: blur(16px)` with internal specular top edge highlights (`.specular-top`).
-- **Elevated Overlays**: Modal dialogs, auth panels, and command consoles (`.glass-surface-elevated`) with deep elevation shadows (`shadow-glass-elevated`) and focused backdrop dimming.
-- **Subtle Panels & Controls**: Translucent interactive pills, chips, and secondary cards (`.glass-surface-subtle`) for dense tables, quote rows, and form inputs with visible focus rings.
-- **Accessible Data Tables**: Specialized table containers (`.glass-table-wrapper`) maintaining high-contrast readable cell content without excessive per-cell blur overhead.
-- **Motion & Accessibility**: All transitions use fluid CSS easings with full `@media (prefers-reduced-motion: reduce)` support.
+Introducing EventCraft – an intelligent event planning and management platform designed to simplify the entire event management process."
 
----
+Scene 2 – Dashboard Overview (0:20–0:45)
+Visual: Open your deployed application and navigate through the dashboard.
 
-## Application Views and Routes
+Voice-over:
 
-| Route | View | Description |
-| :--- | :--- | :--- |
-| `/` | **Landing Page** | Product introduction, architectural summary, feature highlights, and quick-start actions. |
-| `/dashboard` | **Event Dashboard** | Central overview displaying active event countdowns, budget health meters, and upcoming tasks. |
-| `/events` | **Event Selector** | List of all planned events with quick status cards and switcher options. |
-| `/events/new` | **Event Wizard** | Step-by-step creation flow for configuring archetype, dates, guests, and initial budget. |
-| `/planner` | **Plan and Revisions** | Concept narrative, themes, color palettes, recommendations, and conversational revision command console. |
-| `/budget` | **Budget Ledger** | Interactive category allocation sliders, expense logging modal, and variance calculation tables. |
-| `/timeline` | **Timeline and Runsheet** | Phased milestone task checklists with dependency badges alongside the hour-by-hour day-of Run of Show. |
-| `/vendors` | **Vendor Directory** | Contact tracking, quote comparison matrices, and vendor status progression pipeline. |
-| `/settings` | **Settings and Backup** | Profile switcher, passcode configuration, atomic JSON backup export, and backup restore. |
-| `/login` | **Profile Login** | Profile selection with optional passcode verification. |
-| `/register` | **Profile Registration** | Quick creation of new local profiles stored securely in the browser. |
+"Welcome to EventCraft!
 
-> [!TIP]
-> To view the live interface, start the development server using `start.bat` or `npm run dev` and navigate to `http://localhost:3000`.
+The dashboard provides a centralized view of event activities, important information, planning progress, and management tools.
 
----
+With an organized interface and role-based access, users can manage their responsibilities efficiently."
 
-## System Architecture
+Scene 3 – Event Creation (0:45–1:15)
+Coorda – Calm event planning software for modern planners
 
-EventCraft AI operates on a **100% client-side, browser-native architecture**. All business logic, persistence, and state transitions execute directly within the user's browser runtime.
+Visual: Demonstrate creating a sample wedding, birthday or community event.
 
-```mermaid
-flowchart TD
-    subgraph Browser ["Client Browser Runtime (React 19 / Next.js)"]
-        UI["Liquid Glass UI Primitives<br/>(AppShell, Modals, Sliders, Cards)"]
-        AuthCtx["AuthContext & Profile Manager<br/>(LocalStorage Active Profile Tracking)"]
-        
-        subgraph LocalEngine ["Local Planning & Calculation Engine"]
-            RuleEngine["Deterministic Rule Engine<br/>(Weddings, Birthdays, Community)"]
-            CmdParser["Deterministic Command Interpreter<br/>(Pattern Matching & Revision Actions)"]
-            BudgetMath["Exact-Cent Budget Engine<br/>(Integer Cents Arithmetic)"]
-            TaskGraph["Task State Machine<br/>(DFS Cycle Detection)"]
-        end
+Voice-over:
 
-        subgraph LocalStorage ["Browser Native Persistence Layer"]
-            IDB[("IndexedDB: eventcraft_local_db<br/>• profiles • events • event_plans<br/>• budget_categories • expenses<br/>• tasks • vendors • vendor_quotes<br/>• plan_revisions")]
-            BackupUtil["JSON Backup Export / Restore<br/>(Zod Schema Runtime Validation)"]
-        end
-    end
+"Creating an event is simple.
 
-    UI --> AuthCtx
-    UI --> LocalEngine
-    LocalEngine --> IDB
-    IDB <--> BackupUtil
-```
+Users can enter event details, select an event category, provide the budget, and configure the necessary planning information.
 
-### Architectural Principles
-1. **Zero Runtime Network Dependencies**: The application triggers zero HTTP requests (`fetch()`, `axios`, or `XMLHttpRequest`) to external servers or cloud services during normal operation.
-2. **Zero Database Configuration**: No PostgreSQL, MySQL, Docker containers, or database daemons are required. All records persist natively in browser IndexedDB.
-3. **Deterministic Math and Rules**: Budget balancing, task dependencies, and plan generation use deterministic algorithms that produce identical, verified results without floating-point errors.
-4. **Data Ownership and Privacy**: Event details, guest counts, vendor quotes, and budget figures never leave the user's machine.
+EventCraft uses its intelligent rule-based planning engine to generate relevant tasks, schedules, and recommendations based on the selected event type."
 
----
+Scene 4 – Budget & Guest Management (1:15–1:55)
+Plan Weddings, Birthdays & Church Events in One Dashboard | EventCommand HQ
 
-## Technology Stack
+Voice-over:
 
-### Frontend and Client Runtime
-- **Framework**: [Next.js 15.2.1](https://nextjs.org/) (Static HTML Export `output: 'export'`, client-rendered App Router)
-- **Hosting & Static Export**: [Netlify](https://www.netlify.com/) (Configured with `netlify.toml` and `public/_headers`)
-- **UI Library**: [React 19.0.0](https://react.dev/) (Hooks, Context, Client Components)
-- **Styling**: [Tailwind CSS 3.4.17](https://tailwindcss.com/) with custom Liquid Glass design tokens and [PostCSS 8.4.38](https://postcss.org/)
-- **Icons**: [Lucide React 1.16.0](https://lucide.dev/)
-- **Class Utilities**: `clsx` and `tailwind-merge`
+"Budget management helps organizers monitor expenses and keep track of available funds.
 
-### Local Persistence and Planning
-- **Persistence**: Native Browser IndexedDB (Database: `eventcraft_local_db`, 9 dedicated object stores) with an in-memory fallback for SSR and testing
-- **Schema Validation**: [Zod 3.24.2](https://zod.dev/) for form validation, blueprint constraints, and backup file integrity
-- **Planning Engines**: Custom deterministic rule engine and natural-language command interpreter
+Guest management makes it easier to organize guest information and monitor RSVP responses.
 
-### Quality and Testing
-- **Test Framework**: [Vitest 5.0.5](https://vitest.dev/) with native ESM configuration
-- **Type Checking**: [TypeScript 5.7.3](https://www.typescriptlang.org/) (Strict mode enabled)
-- **Linting**: [ESLint 9.21.0](https://eslint.org/) with `eslint-config-next`
+EventCraft also supports seating arrangements and digital invitations with QR codes, helping organizers manage guest experiences more efficiently."
 
----
+Scene 5 – Task & Vendor Management (1:55–2:30)
+Coordinate event teams and vendors without meetings • Breeze
 
-## Project Structure
+Voice-over:
 
-```text
-EventCraft AI/
-├── docs/                           # Architectural specifications and guides
-│   ├── ARCHITECTURE.md             # System architecture & domain boundaries
-│   ├── DATA_MODEL.md               # Data model reference
-│   ├── DEPLOYMENT_GUIDE.md         # Deployment runbook
-│   ├── TESTING_GUIDE.md            # Test suite catalogue & execution guide
-│   └── USER_FLOWS.md               # User journeys & state transition diagrams
-├── prisma/                         # Historical schema reference (inactive at runtime)
-│   ├── schema.prisma               # Prisma data model reference
-│   └── migrations/                 # Version-controlled SQL migrations
-├── src/
-│   ├── app/                        # Next.js App Router client pages
-│   │   ├── layout.tsx              # Root HTML layout and context providers
-│   │   ├── page.tsx                # Landing and presentation page
-│   │   ├── globals.css             # Tailwind directives & glassmorphic tokens
-│   │   ├── dashboard/              # Active event overview and metrics
-│   │   ├── events/                 # Event list and creation wizard (/events/new)
-│   │   ├── planner/                # Concept viewer & command revision console
-│   │   ├── budget/                 # Category sliders and expense ledger
-│   │   ├── timeline/               # Phased milestones & day-of runsheet
-│   │   ├── vendors/                # Vendor directory & quotation comparisons
-│   │   ├── settings/               # Profile management & JSON backup export/import
-│   │   └── login/ & register/      # Local profile selection screens
-│   ├── components/                 # React component library
-│   │   ├── ui/                     # 14 reusable glass UI primitives (Button, Modal, etc.)
-│   │   ├── layout/                 # AppShell, Header, Sidebar, AuthContext
-│   │   ├── events/                 # Event creation wizard & plan display
-│   │   ├── planner/                # Conversational revision command panel
-│   │   ├── budget/                 # Financial cards, allocation sliders, modals
-│   │   ├── timeline/               # Task checklists, dependency tags, runsheet
-│   │   └── vendors/                # Vendor cards, quote tables, dialogs
-│   ├── lib/                        # Core business logic and storage services
-│   │   ├── storage/                # IndexedDB engine, local repository, types, tests
-│   │   ├── local-planning/         # Rule engine, command interpreter, schema, tests
-│   │   ├── budget/                 # Exact-cent financial arithmetic & tests
-│   │   ├── timeline/               # Task state machine & DFS cycle detection
-│   │   ├── vendors/                # Vendor schemas and quote comparison logic
-│   │   ├── validations/            # Zod validation schemas & tests
-│   │   ├── navigation.ts           # Navigation items and route definitions
-│   │   └── utils.ts                # Class merger and currency formatting utilities
-│   └── types/                      # Shared TypeScript interface definitions
-├── public/                         # Static deployment assets
-│   └── _headers                    # Netlify security headers configuration
-├── netlify.toml                    # Netlify build and publish configuration
-├── start.bat                       # Automated Windows launcher script
-├── vitest.config.mts               # Vitest test runner configuration
-├── next.config.js                  # Next.js static export & compiler configuration
-├── tailwind.config.js              # Tailwind styling configuration
-├── tsconfig.json                   # TypeScript compiler configuration
-└── package.json                    # Project dependencies, scripts, and metadata
-```
+"Successful events require proper coordination.
 
----
+EventCraft provides task tracking, scheduling, vendor coordination, and volunteer management.
 
-## Local Development Setup
+Its task management system supports dependencies and progress tracking, helping organizers understand what needs to be completed."
 
-### Prerequisites
-- **Node.js**: `v20.x` or `v22.x` or higher (verified on Node `v22+` and `v26+`).
-- **Package Manager**: `npm` (`v10+`).
-- **Operating System**: Windows, macOS, or Linux.
-- **Database**: **None required**. EventCraft AI does not require PostgreSQL, Docker, or any database daemon.
-- **Cloud Credentials**: **None required**. EventCraft AI does not require OpenAI, Gemini, or external credentials.
+Scene 6 – Intelligent Features (2:30–3:00)
+Visual: Demonstrate the command interpreter and planning engine using actual supported commands.
 
----
+Voice-over:
 
-### Step 1: Clone and Navigate to the Repository
+"One of the interesting features of EventCraft is its intelligent planning functionality.
 
-```bash
-git clone https://github.com/nithinpanuganti/EventCraft.git
+The rule-based planning engine generates event-specific suggestions, while the natural-language command interpreter recognizes supported commands for managing tasks, budgets, and event information.
+
+This makes event management more organized and convenient."
+
+Scene 7 – Conclusion (3:00–3:20)
+What Time Should a Wedding Reception Start? Tips for a Perfect Celebration - OMG Hitched!
+
+Voice-over:
+
+"From event creation to final execution, EventCraft brings essential event management activities together in one platform.
+
+Our goal is to make event planning simpler, smarter, and more organized.
+
+Thank you for watching!
+
+This is EventCraft – Plan Smarter. Organize Better. Celebrate More."
+
+Recording plan
+Time
+
+What to record
+
+0:00–0:20
+
+Logo and introduction
+
+0:20–0:45
+
+Dashboard
+
+0:45–1:15
+
+Create an event
+
+1:15–1:55
+
+Budget and guests
+
+1:55–2:30
+
+Tasks and vendors
+
+2:30–3:00
+
+Intelligent features
+
+3:00–3:20
+
+Closing screen
+
+Recommended free editing tools
+File:OBS Studio Logo.svg - Wikimedia Commons
+
+OBS Studio
+
+Screen recording
+
+Download OBS
+Download CapCut | Baixaki
+
+CapCut
+
+Video editing, subtitles and transitions
+
+CapCut website
+Canva | MMA / Marketing + Media Alliance
+
+Canva
+
+Opening and closing title screens
+
+Canva website
+One suggestion before recording
+I recommend making the video look like a startup product demonstration:
+
+1920 × 1080 resolution.
+
+Clear English voice-over.
+
+Smooth screen transitions.
+
+Subtitles throughout.
+
+Background music at low volume.
+
+Show actual working features rather than mockups.
+
+One thing I want to know: Are you recording the video by yourself with your laptop, or do you want an AI-generated video with voice-over and animations? I can adapt the script into a complete shot-by-shot production plan.
+
+
+Pasted text.txt
+Document
+make it more pro level
+Let's elevate this into a professional SaaS product launch / startup-style demo video. Rather than simply explaining features, we'll demonstrate the product through a real event-planning scenario, highlight the engineering behind it, and finish with a strong product presentation.
+
+EventCraft AI — Professional Demo Video
+Agence web en Tunisie | Sites, apps & marketing IA | Kanaevo
+
+EVENTCRAFT AI
+The Complete Event Planning Workspace
+Product Demonstration · Version Showcase · 4–5 Minutes
+
+Professional voice-over
+Real product walkthrough
+Technical showcase
+Scene 01 — Cinematic product introduction
+00:00 – 00:30
+Wyndham Grand Udaipur | Weddings and Events by Amitesh
+
+Visual direction
+
+Start with a black screen.
+
+Introduce subtle cinematic sound.
+
+Show quick shots of wedding, birthday and community events.
+
+Transition into the EventCraft logo.
+
+Reveal the application dashboard.
+
+Voice-over:
+
+"Every successful event begins with an idea.
+
+But transforming that idea into a perfectly organized experience requires coordination, planning, financial management, and execution.
+
+Traditional event planning often involves disconnected tools, scattered information, and complicated workflows.
+
+Introducing EventCraft AI.
+
+A browser-native event planning platform that brings the entire event management lifecycle into one unified workspace.
+
+Plan smarter. Organize better. Execute with confidence."
+
+Scene 02 — Product architecture and dashboard
+00:30 – 01:00
+Aether Analytics — Glassmorphism SaaS Dashboard by Agam Singh Sahni on Dribbble
+
+Visual direction
+
+Record:
+
+Landing page.
+
+Local profile login.
+
+Dashboard.
+
+Sidebar navigation.
+
+Event overview and countdown.
+
+Voice-over:
+
+"EventCraft is built using a modern frontend architecture powered by Next.js, React, and TypeScript.
+
+Its browser-local architecture uses native IndexedDB for persistent data storage.
+
+This means event information, financial calculations, planning rules, and revisions are handled directly within the browser, without requiring an application backend or external cloud AI services.
+
+The dashboard provides a centralized workspace for managing event activities and accessing essential planning modules."
+
+Scene 03 — Intelligent event creation
+01:00 – 01:40
+My Event Hero
+
+Visual direction
+
+Demonstrate the complete five-step event wizard.
+
+Use a sample wedding event with realistic details.
+
+Voice-over:
+
+"Let's explore the event creation workflow.
+
+EventCraft supports three event archetypes: weddings, birthdays, and community gatherings.
+
+Through a guided five-step wizard, users configure event details, dates, guest headcounts, budget preferences, and themes.
+
+Based on the selected event archetype, the deterministic planning engine generates a structured event blueprint.
+
+This includes planning recommendations, budget allocations, and task schedules tailored to the selected event category."
+
+Scene 04 — Precision budget management
+01:40 – 02:15
+Praevu — Liquidity Intelligence for Family Offices
+
+Visual direction
+
+Show:
+
+Budget overview.
+
+Category allocation sliders.
+
+Expense entry.
+
+Paid, pending and overdue statuses.
+
+Remaining budget.
+
+Voice-over:
+
+"Financial control is one of the most important aspects of event management.
+
+EventCraft introduces an exact-cent budgeting engine that uses integer-based financial calculations instead of conventional floating-point arithmetic.
+
+The system distributes budgets across event-specific categories, tracks individual expenses, and calculates category-level variances.
+
+Organizers can monitor allocated funds, actual expenditure, and remaining budgets through a unified financial ledger.
+
+The objective is simple: improve financial transparency and eliminate calculation inconsistencies."
+
+Scene 05 — Task intelligence and execution
+02:15 – 02:55
+Project Tracking Board: How To Track Work, Milestones, and Risks
+
+Visual direction
+
+Show the timeline page and demonstrate task status changes.
+
+Highlight the five phases:
+
+Planning
+
+Booking
+
+Preparation
+
+Event Day
+
+Post Event
+
+Voice-over:
+
+"Planning an event is not just about creating a checklist. It's about completing the right tasks in the right sequence.
+
+EventCraft implements a phased task management system with dependency validation.
+
+Its task state machine manages task transitions, while a Depth-First Search algorithm identifies circular dependencies.
+
+The platform also generates an hour-by-hour event-day run sheet, including time slots, coordination responsibilities, and logistical notes.
+
+This transforms event planning into a structured execution workflow."
+
+Scene 06 — Vendor management and quotations
+02:55 – 03:25
+
+
+Voice-over:
+
+"Vendor coordination is another essential component.
+
+EventCraft provides a vendor directory covering eleven categories, including catering, photography, videography, venue management, transportation, and entertainment.
+
+Its quotation comparison functionality allows organizers to compare multiple proposals, review minimum, average, and maximum quotation values, and track vendor selection progress.
+
+Everything is organized within one workspace."
+
+Scene 07 — Conversational command interpreter
+03:25 – 04:00
+Terminal Interface - Components Templates - v0 by Vercel
+
+Visual direction
+
+Show the actual command console. Type and execute supported commands.
+
+Example:
+
+add task Book DJ
+show remaining budget
+adjust budget to 60000
+change date to 2026-12-25
+Voice-over:
+
+"One of EventCraft's distinctive capabilities is its conversational command interpreter.
+
+Instead of navigating through multiple screens, users can enter supported natural-language commands to modify their event plans.
+
+The command interpreter uses client-side pattern matching to recognize requests, validate operations, and execute corresponding planning updates.
+
+It provides a lightweight, deterministic approach to intelligent interaction without depending on external large language model services."
+
+Scene 08 — Privacy and data ownership
+04:00 – 04:25
+Digital Security Concept with Glass Padlock 3d Icon on an Abstract Digital Surface
+
+Voice-over:
+
+"Privacy and data ownership are fundamental design principles of EventCraft.
+
+The application uses browser-native IndexedDB storage, local profile workspaces, JSON backup export, and schema-validated restoration.
+
+Event information remains within the user's browser during normal application operation.
+
+No external cloud AI or application backend is required."
+
+Scene 09 — Engineering and final showcase
+04:25 – 05:00
+Sci Fi Futuristic Modern Elegant Dark Podium Stage Purple Blue Glowing Glass Panels Cyber Background Transparent Laser Beam Pillars Fashion Concrete Grunge Wet Floor 3D Rendering
+
+Visual direction
+
+Show a quick montage:
+
+Dashboard
+
+Event wizard
+
+Budget
+
+Timeline
+
+Vendor directory
+
+Command interpreter
+
+GitHub repository
+
+Voice-over:
+
+"Built with Next.js, React, TypeScript, Tailwind CSS, IndexedDB, and Zod, EventCraft combines modern interface design with structured business logic.
+
+The project also includes automated testing, with 76 passing tests across nine test suites, according to the project's documented test results.
+
+EventCraft represents an approach to making event planning more structured, accessible, and efficient.
+
+From the first idea to the final execution, everything begins with a plan.
+
+This is EventCraft AI.
+
+Plan Smarter. Organize Better. Celebrate More."
+
+Production direction
+1. Visual identity
+CopilotKit — Best-in-class copilots in your product.
+
+Dark navy / violet
+
+Primary visual identity
+
+shadcn-glass-ui: Glassmorphism поверх shadcn/ui без миграции / Хабр
+
+Liquid Glass
+
+Application presentation
+
+Platinum Luxury Titles, After Effects Project Files | VideoHive
+
+Minimal typography
+
+Titles and transitions
+
+Kann man einen Mini-PC aufrüsten? | GEEKOM Deutschland
+
+Cinematic lighting
+
+Opening and closing
+
+2. Recommended production tools
+Purpose
+
+Tool
+
+Screen recording
+
+OBS Studio
+
+Editing
+
+DaVinci Resolve
+
+Voice-over
+
+Your own voice or a suitable TTS tool
+
+Graphics
+
+Canva
+
+Audio
+
+Copyright-safe background music
+
+3. Recording settings
+Resolution: 1920 × 1080
+
+Frame rate: 30 FPS
+
+Format: MP4
+
+Audio: Clear voice-over with low-volume background music
+
+Transitions: Smooth cuts and subtle zooms
+
+Subtitles: English
+
+4. Important: demonstrate real functionality
+Don't show an imaginary AI chatbot or claim external AI integration. Your actual differentiator is the deterministic planning engine, exact-cent budget calculations, dependency-aware task system, and local-first architecture.
+
+Let's make the final video even more professional
+I need one detail before preparing the production-ready recording storyboard.
+
+1. Which video presentation style do you want?
+
+
+Premium startup product launch (Apple-style)
+
+Professional technical project demonstration
+
+Hackathon / innovation competition presentation
+
+Corporate software product advertisement
+2. Voice-over preference
+
+
+Male professional English voice
+
+Female professional English voice
+
+My own voice
+3. Video duration
+
+
+3 minutes
+
+5 minutes
+
+7 minutes – detailed demonstration
+give me readme file
+
+Worked for 1m 2s
+Your professional, GitHub-ready EventCraft AI README.md is ready.
+
+README.md
+
+Markdown · 444 lines · Complete project documentation
+
+Ready
+Download README.md
+
+It includes:
+
+Professional project introduction.
+
+Features and application modules.
+
+Architecture diagram.
+
+Technology stack.
+
+Installation and execution instructions.
+
+Testing and deployment.
+
+Privacy and data storage.
+
+Project roadmap and contribution guidelines.
+
+Important: I also distinguished implemented features from planned features and accurately described the rule-based intelligence without claiming external GenAI integration.
+
+Place this file in your GitHub repository's root directory, replacing the existing README.md.
+
+
+README.md
+Document
+EventCraft AI
+Plan Smarter. Organize Better. Celebrate More.
+A local-first, browser-native event planning workspace for weddings, birthdays, and community gatherings.
+
+EventCraft AI brings the essential stages of event planning into one organized workspace. It combines event-specific planning templates, precise budget allocation, dependency-aware task management, vendor quotation tracking, and a natural-language command interpreter.
+
+Unlike cloud-dependent event platforms, EventCraft AI is designed to run its application logic and store event information directly in the user's browser. It uses native IndexedDB for persistence and does not require an application backend, a separately managed database, or external cloud AI credentials.
+
+Table of Contents
+Why EventCraft AI?
+Key Features
+Supported Event Types
+Application Views
+Technology Stack
+How It Works
+Getting Started
+Environment Variables
+Available Scripts
+Testing
+Data Storage, Privacy, and Backups
+Deployment
+Current Status and Roadmap
+Project Structure
+Contributing
+License
+Why EventCraft AI?
+Event planning often involves disconnected spreadsheets, separate task lists, informal vendor notes, and budget calculations that are difficult to keep in sync. EventCraft AI addresses this fragmentation through a single browser-based planning workspace.
+
+Core principles
+One planning workspace: Keep event details, budgets, tasks, vendors, and revisions together.
+Local-first operation: Store application data in the browser using IndexedDB.
+Financial precision: Use integer minor units (such as cents or paise) for budget calculations instead of floating-point arithmetic.
+Structured execution: Organize tasks into phases and validate prerequisite relationships.
+Deterministic planning: Generate event blueprints and interpret supported commands using local rules and pattern matching, without external LLM inference.
+Data portability: Export application data as JSON and restore it with schema validation.
+Key Features
+1. Guided Event Creation
+Create an event through a five-step wizard. Configure details such as the event category, date, guest headcount, budget, currency preference, and theme.
+
+2. Event-Specific Planning Blueprints
+The local planning engine generates structured plans based on the selected event type. Generated content can include planning recommendations, themes, color palettes, budget categories, tasks, and an event-day schedule.
+
+3. Budget Allocation and Expense Ledger
+Allocate the target budget across event-specific categories.
+Use integer-based minor-unit arithmetic to avoid floating-point rounding errors.
+Record individual expenses and associate them with budget categories and vendors.
+Track payment states: PENDING, PAID, and OVERDUE.
+Review category-level spending and budget variances.
+Allocate any rounding remainder so the generated category allocations balance to the target amount.
+4. Phased Task Management
+Tasks are organized into five planning phases:
+
+PLANNING
+BOOKING
+PREPARATION
+EVENT_DAY
+POST_EVENT
+The task state machine manages task transitions and checks prerequisite relationships. A Depth-First Search (DFS) cycle-detection algorithm is used to identify circular dependencies. The application can also generate an hour-by-hour event-day run sheet with time slots, coordinator responsibilities, and logistical notes.
+
+5. Vendor Directory and Quote Comparison
+Maintain vendor records across 11 categories:
+
+Catering
+Photography
+Videography
+Florist
+Music / DJ
+Venue
+Hair and makeup
+Officiant
+Transportation
+Rentals
+Planning
+Record multiple quotations, compare minimum, average, and maximum bid values, and track vendor selection progress.
+
+6. Natural-Language Command Interpreter
+Use supported text commands to make common planning updates without navigating through multiple screens. The command interpreter uses local pattern matching; it is not an external generative-AI chatbot.
+
+Examples of supported commands:
+
+Command	Action
+add task Book DJ	Adds a task to the appropriate phase.
+complete task Book Venue	Checks prerequisites and attempts to complete the task.
+change date to 2026-12-25	Updates the event date and recalculates dependent milestones.
+adjust budget to 60000	Updates the target budget and category allocations.
+add expense Photography 12000	Adds an expense against a matching budget category.
+show remaining budget	Displays the remaining-budget breakdown.
+regenerate plan	Regenerates the deterministic event blueprint, subject to confirmation safeguards.
+update theme minimal elegant	Updates the event theme description.
+Use the command examples supported by the current interface and follow any confirmation prompts shown by the application.
+
+7. Local Profiles and Data Portability
+Create local profiles for separate browser workspaces.
+Configure optional passcode verification.
+Export application data from the Settings area as a timestamped JSON backup.
+Restore backups after structural validation with Zod schemas.
+Reset local application data when starting fresh.
+Local profile note: Profiles provide workspace separation on a shared browser. They are not intended to provide cryptographic security boundaries against someone who can access browser developer tools or the device itself.
+
+Supported Event Types
+Event type	Example planning focus
+Wedding	Venue, catering, photography, decoration, ceremony and reception timelines, and guest coordination.
+Birthday	Celebration themes, entertainment, activities, catering, and milestone schedules.
+Community Event	Gathering logistics, permits, safety considerations, volunteer coordination, and budget planning.
+The planning output is generated from the event archetype and the information entered in the wizard.
+
+Application Views
+Route	View	Purpose
+/	Landing page	Product introduction, architecture summary, feature highlights, and quick-start actions.
+/dashboard	Dashboard	Overview of active events, budget status, countdowns, and upcoming tasks.
+/events	Event selector	Browse planned events and switch between them.
+/events/new	Event wizard	Create and configure an event.
+/planner	Planner	Review the event concept, themes, recommendations, and planning revisions.
+/budget	Budget ledger	Manage allocations, expenses, and category variances.
+/timeline	Timeline and run sheet	Review phased tasks, dependencies, milestones, and event-day schedule.
+/vendors	Vendor directory	Manage vendor records and compare quotations.
+/settings	Settings and backup	Manage local profiles and export or restore backups.
+/login	Profile login	Select a local profile and complete optional passcode verification.
+/register	Profile registration	Create a local profile.
+Technology Stack
+Area	Technology
+Framework	Next.js 15.2.1
+UI library	React 19.0.0
+Language	TypeScript 5.7.3
+Styling	Tailwind CSS 3.4.17
+Browser persistence	Native IndexedDB
+Schema validation	Zod 3.24.2
+Testing	Vitest 5.0.5
+Icons	Lucide React
+Static hosting configuration	Netlify
+The interface uses a custom Liquid Glass design system with translucent surfaces, ambient gradients, responsive layouts, and reduced-motion support.
+
+How It Works
+EventCraft AI is designed around three browser-side layers:
+
+Local Planning and Business Logic
+Event Rule Engine
+Command Interpreter
+Integer-Minor-Unit BudgetEngine
+Task State Machine and DFSValidation
+React and Next.js Interface
+Local Planning and BusinessLogic
+Native Browser IndexedDB
+Zod Validation
+JSON Backup and Restore
+Storage model
+The browser database is named eventcraft_local_db and uses nine IndexedDB object stores:
+
+profiles
+events
+event_plans
+budget_categories
+expenses
+tasks
+vendors
+vendor_quotes
+plan_revisions
+Local-first architecture
+During normal operation, the application is designed to perform its planning, calculations, state transitions, and persistence in the browser. It does not require a running application server or external database service for its core workflows.
+
+Getting Started
+Prerequisites
+Node.js 20.x or 22.x and above, as supported by the project setup.
+npm 10 or later.
+A modern web browser.
+No PostgreSQL, MySQL, Docker, or database daemon is required.
+No OpenAI, Gemini, or other cloud AI API credentials are required.
+1. Clone the repository
+git clone https://github.com/manigops/EventCraft.git
 cd EventCraft
-```
+2. Install dependencies
+Windows Command Prompt / PowerShell:
 
----
-
-### Step 2: Install Dependencies
-
-```bash
-# On Windows:
 npm.cmd install
+macOS / Linux:
 
-# On macOS / Linux:
 npm install
-```
+3. Configure environment variables
+Copy the example environment file:
 
----
-
-### Step 3: Configure Environment Variables
-
-```bash
-# On Windows Command Prompt:
+# Windows Command Prompt
 copy .env.example .env
 
-# On Windows PowerShell, macOS, or Linux:
+# PowerShell, macOS, or Linux
 cp .env.example .env
-```
+The application is documented to run with the default configuration; the variables below are optional.
 
-The application runs immediately out of the box with default settings.
+4. Start the development server
+npm run dev
+On Windows, you can also use:
 
----
-
-### Step 4: Start the Development Server
-
-#### Option A: One-Click Launcher (Windows)
-Double-click `start.bat` in the root folder, or execute it in your terminal:
-
-```cmd
-start.bat
-```
-
-The launcher verifies Node.js, installs dependencies if missing, ensures `.env` exists, and starts the development server.
-
-#### Option B: Standard npm Command (All Platforms)
-
-```bash
-# On Windows (Command Prompt or PowerShell):
 npm.cmd run dev
+Or use the included Windows launcher by running start.bat.
 
-# On macOS / Linux:
-npm run dev
-```
+Open the local development URL:
 
-> [!NOTE]
-> If you encounter `File ... npm.ps1 cannot be loaded because running scripts is disabled` on Windows PowerShell, run `npm.cmd run dev` or run PowerShell with `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass`.
+http://localhost:3000
+Environment Variables
+Variable	Description	Default / Example
+NEXT_PUBLIC_APP_NAME	Application display name.	EventCraft AI
+NEXT_PUBLIC_APP_ENV	Application environment.	development
+NEXT_PUBLIC_APP_URL	Canonical application URL.	http://localhost:3000
+No backend connection strings or external AI credentials are required by the documented architecture.
 
-Once the dev server compiles, open your browser and navigate to:
-**[http://localhost:3000](http://localhost:3000)**
+Available Scripts
+Command	Description
+npm run dev	Start the Next.js development server.
+npm test	Run the Vitest test suite.
+npm run type-check	Run TypeScript type checking without emitting files.
+npm run lint	Run Next.js and ESLint checks.
+npm run build	Build and statically export the application into out/.
+npx serve out	Serve the generated static export locally.
+Testing
+The project documentation reports 76 passing tests across 9 test files. The described coverage includes:
 
----
+IndexedDB operations, backup export, and restore.
+Local repository behavior and event scoping.
+Deterministic event blueprint generation.
+Exact-minor-unit budget calculations and variance handling.
+Natural-language command interpretation.
+Task state transitions, prerequisites, and dependency-cycle detection.
+Event wizard and general schema validation.
+Browser architecture and zero-network behavior checks.
+Run the tests with:
 
-## Environment Variables
-
-All configuration settings are managed via environment variables. Refer to [`.env.example`](.env.example) for reference:
-
-| Variable | Description | Required? | Default / Example Value |
-| :--- | :--- | :---: | :--- |
-| `NEXT_PUBLIC_APP_NAME` | Display name of the application. | Optional | `EventCraft AI` |
-| `NEXT_PUBLIC_APP_ENV` | Application environment mode (`development`, `production`). | Optional | `development` |
-| `NEXT_PUBLIC_APP_URL` | Canonical URL of the application. | Optional | `http://localhost:3000` |
-
-> [!NOTE]
-> EventCraft AI requires zero backend connection strings, authentication secrets, or external credentials.
-
----
-
-## Available Scripts and Testing
-
-All scripts are configured in [`package.json`](package.json) and can be executed using `npm`:
-
-```bash
-# Run the Next.js development server
-npm run dev
-
-# Execute the complete automated test suite (Vitest)
 npm test
+For a full local verification, run:
 
-# Run TypeScript compiler type check without emitting output
 npm run type-check
-
-# Run Next.js and ESLint code quality checks
 npm run lint
-
-# Build and statically export the production bundle into out/
+npm test
 npm run build
+Data Storage, Privacy, and Backups
+EventCraft AI is built around browser-local data storage:
 
-# Preview the production static export locally
-npx serve out
-```
+Event information, budgets, expenses, tasks, vendor records, and profiles are stored in IndexedDB on the user's browser.
+The core planning engine does not require an external cloud AI service.
+JSON backup export allows users to save a copy of their local application data.
+Restore validates the backup structure using Zod before importing it.
+Important data portability details:
 
-### Verified Test Suite Breakdown
-EventCraft AI includes a test suite covering unit math, dependency resolution algorithms, storage persistence, schema validation, command interpretation, and zero-network verification.
+Browser storage belongs to the specific origin. Data saved on localhost does not automatically appear on the deployed website's domain.
+Clearing the website's browser data can remove the local IndexedDB database.
+Export a backup from /settings and keep the JSON file somewhere safe.
+To move data between local development and a deployed domain, export the backup from the original origin and restore it on the destination origin.
+Deployment
+The project is configured for static deployment using Next.js static export and Netlify.
 
-**Current Test Results**: **76 passed** across **9 test files** (100% success rate):
+Build locally
+npm run build
+The generated static site is written to:
 
-| Category | Test Suite File | Count | Verified Behaviors |
-| :--- | :--- | :---: | :--- |
-| **Storage Architecture** | `src/lib/storage/browser-architecture.test.ts` | 5 | Zero network requests verification, profile switching/deletion, event cascade cleanup, corrupted backup rejection, navigation route integrity |
-| **IndexedDB Engine** | `src/lib/storage/indexed-db.test.ts` | 4 | IndexedDB CRUD, memory fallback, versioned backup export, and schema-validated restore |
-| **Local Repository** | `src/lib/storage/local-repository.test.ts` | 4 | Passcode hashing, event scoping, task dependencies, vendor quotes, and budget CRUD |
-| **Rule Engine** | `src/lib/local-planning/rule-engine.test.ts` | 5 | Wedding, Birthday, and Community deterministic blueprints, exact-cent balanced budget allocation, zero-budget division safety |
-| **Command Interpreter**| `src/lib/local-planning/command-interpreter.test.ts` | 9 | Natural language commands (`add task`, `complete task`, `change date`, `adjust budget`, `add expense`, `regenerate plan`, `update theme`, `show remaining budget`), unsupported command guidance |
-| **Financial Engine** | `src/lib/budget/financial.test.ts` | 12 | Integer-cents arithmetic, category variance, zero-budget division safety, overruns |
-| **Timeline Engine** | `src/lib/timeline/task-state-machine.test.ts` | 16 | Transition state machine, cyclic dependency detection (DFS), prerequisite chains |
-| **Wizard Validation** | `src/lib/validations/wizard.test.ts` | 15 | 5-step event wizard schema boundaries, budget limits, future date constraints |
-| **General Validation** | `src/lib/validations/validations.test.ts` | 6 | Input schemas and partial update guardrails |
-| **Total** | **9 Suites** | **76** | **All 76 tests passing (100% success rate)** |
+out/
+Deploy with Netlify
+Push the project to a Git repository accessible to Netlify.
+Import the repository into Netlify.
+Use the build command npm run build.
+Set the publish directory to out.
+Deploy the site.
+The repository includes netlify.toml and a public/_headers file for deployment configuration and response security headers.
 
----
+Deployment reminder: Browser-local data is origin-specific. Data created on a local development address will not automatically transfer to the deployed domain. Use the JSON backup and restore workflow when migrating data.
 
-## Data Storage and Privacy
+Current Status and Roadmap
+Documented implemented capabilities
 
-EventCraft AI prioritizes user privacy and data ownership through clear storage boundaries:
+Browser-local architecture using IndexedDB.
 
-1. **Client-Contained Storage**:
-   All event details, guest counts, budget numbers, vendor quotes, and profile records are stored directly inside your browser's IndexedDB engine (`eventcraft_local_db`). No data is transmitted to external servers, cloud providers, or telemetry collectors.
-2. **Object Stores**:
-   Data is partitioned across 9 distinct IndexedDB object stores:
-   - `profiles`: User names, emails, and salt-hashed passcodes.
-   - `events`: Event titles, archetypes, dates, guest counts, and total budgets.
-   - `event_plans`: Concept narratives, themes, color palettes, and day-of schedules.
-   - `budget_categories`: Cents-allocated category limits and percentage weights.
-   - `expenses`: Individual expense items, payment statuses, and vendor links.
-   - `tasks`: Phased checklist items, priorities, due dates, and dependency arrays.
-   - `vendors`: Vendor contact information, categories, and booking status.
-   - `vendor_quotes`: Itemized quotes submitted by vendors.
-   - `plan_revisions`: Audit history of modifications made via command revisions.
-3. **Local Profiles as Workspaces**:
-   Profiles provide convenient workspace separation for different planners or events on a shared browser. Because profiles reside in browser storage, they are not intended as cryptographic security boundaries against users with access to browser developer tools.
-4. **Storage Reset and Browser Clearing**:
-   Clearing site data or cache for `localhost` in your browser will erase local IndexedDB stores. To ensure your plans are preserved, use the **Export Backup (.json)** feature in `/settings` to save an atomic copy to your local drive.
+Static deployment configuration for Netlify.
 
----
+Wedding, birthday, and community event creation flows.
 
-## Static Deployment (Netlify)
+Local profiles and persistent event data.
 
-EventCraft AI is fully prepared for static deployment on **Netlify** or any standard static web host:
+Integer-minor-unit budget allocation and expense tracking.
 
-### Architecture & Configuration
-- **Static HTML Export**: `output: 'export'` and `trailingSlash: true` configured in [`next.config.js`](next.config.js).
-- **Publish Directory**: `out/` generated on `npm run build` containing all 14 prerendered application routes.
-- **Security Headers**: Defined in [`public/_headers`](public/_headers) (automatically copied to `out/_headers`) setting `X-Frame-Options: DENY`, `X-Content-Type-Options: nosniff`, and restrictive permissions policies.
-- **Netlify Configuration**: [`netlify.toml`](netlify.toml) pre-specifies the build command (`npm run build`) and output folder (`out`).
+Phased task state machine and dependency-cycle detection.
 
-### Deploying to Netlify
-1. Connect this repository to your Netlify dashboard.
-2. Netlify will auto-detect the build command (`npm run build`) and publish directory (`out`) from `netlify.toml`.
-3. Click **Deploy**.
+Event-day run sheet generation.
 
-> [!IMPORTANT]
-> **Data Portability Notice**: Because EventCraft AI uses browser-native IndexedDB, data stored during local development on `localhost` does not automatically transfer to your deployed web domain. To migrate your events, export a backup from `http://localhost:3000/settings` and restore the `.json` file on your deployed Netlify URL.
+Vendor directory and quotation comparison.
 
----
+Local natural-language command interpreter.
 
-## Current Status and Roadmap
+JSON backup export and schema-validated restore.
 
-### Implemented and Verified Capabilities
-- [x] 100% Browser-local architecture with zero runtime server or database dependencies.
-- [x] Netlify static deployment ready with `out/` export, `netlify.toml`, and `public/_headers`.
-- [x] Multi-archetype event planning wizard (Weddings, Birthdays, Community Events).
-- [x] Complete client persistence with 9 IndexedDB stores and SSR in-memory fallback.
-- [x] Exact-cent integer budgeting engine with guaranteed zero-rounding-error balancing.
-- [x] Phased task state machine with DFS cyclic dependency prevention.
-- [x] Hour-by-hour day-of Run of Show schedule generator.
-- [x] Vendor directory with quotation comparison and status pipelines.
-- [x] Conversational command interpreter for natural-language plan adjustments.
-- [x] Atomic JSON database backup export and schema-validated restore.
-- [x] Translucent Liquid Glass design system built with responsive Tailwind CSS.
-- [x] Automated Windows launcher script (`start.bat`) with dependency verification.
-- [x] Automated test suite with 76 passing tests across 9 suites.
+Responsive Liquid Glass interface.
 
-### Planned Enhancements
-- [ ] Export of Day-of Run of Show to iCal (`.ics`) and printable PDF formats.
-- [ ] Seating chart builder with drag-and-drop table arrangements.
-- [ ] Multi-event timeline overlap calendar view.
-- [ ] Customizable archetype template creator.
+Automated tests documented as 76 passing tests across 9 suites.
+Planned enhancements
+Export the event-day run sheet to iCalendar (.ics) and printable PDF formats.
+Seating chart builder with drag-and-drop table arrangements.
+Multi-event timeline overlap calendar.
+Customizable event archetype template creator.
+Planned items are not represented as currently implemented features.
 
----
+Project Structure
+EventCraft/
+├── docs/                     # Architecture, data model, deployment, testing, user flows
+├── prisma/                   # Historical schema reference; inactive at runtime
+├── public/                   # Static assets and deployment headers
+├── src/
+│   ├── app/                  # Next.js application routes
+│   ├── components/           # UI, layout, event, planner, budget, timeline, vendor components
+│   ├── lib/
+│   │   ├── storage/          # IndexedDB and local repository
+│   │   ├── local-planning/   # Rule engine and command interpreter
+│   │   ├── budget/            # Financial calculations
+│   │   ├── timeline/          # Task state machine and dependency logic
+│   │   ├── vendors/           # Vendor and quotation logic
+│   │   └── validations/       # Zod schemas
+│   └── types/                # Shared TypeScript types
+├── netlify.toml              # Netlify build and publish configuration
+├── next.config.js            # Next.js configuration
+├── package.json              # Dependencies and scripts
+├── start.bat                 # Windows development launcher
+└── vitest.config.mts         # Vitest configuration
+Contributing
+Contributions and suggestions are welcome.
 
-## Contributing
+Fork the repository.
 
-Contributions to EventCraft AI are welcome. To contribute:
+Create a feature branch:
 
-1. **Fork the Repository**: Create a personal fork on GitHub.
-2. **Create a Feature Branch**:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-3. **Adhere to Code Standards**:
-   - Write clear, typed TypeScript code.
-   - Maintain the Liquid Glass design aesthetic and component hierarchy.
-   - Ensure all features operate entirely within the browser without introducing backend endpoints.
-   - Add unit tests in `src/lib/` for any new logic or algorithms.
-4. **Run Verification Commands**:
-   ```bash
-   npm run type-check
-   npm run lint
-   npm test
-   npm run build
-   ```
-5. **Submit a Pull Request**: Provide a clear description of the problem solved and test results.
+git checkout -b feature/your-feature-name
+Follow the existing TypeScript conventions and component structure.
 
----
+Keep core application workflows compatible with the browser-local architecture unless the project direction is intentionally changed.
 
-## License
+Add or update tests for changes to business logic.
 
-This repository is currently marked as `"private": true` in [`package.json`](package.json). All rights are reserved. An open-source license has not yet been specified.
+Run the verification commands:
 
----
+npm run type-check
+npm run lint
+npm test
+npm run build
+Submit a pull request with a clear description of the change.
 
-## Acknowledgments
+License
+The repository is currently marked as private and does not specify an open-source license. All rights are reserved unless the repository owner states otherwise.
 
-EventCraft AI is built with modern open-source software and tools:
-- [Next.js](https://nextjs.org/) by Vercel for the client-side App Router architecture.
-- [React](https://react.dev/) by Meta.
-- [Tailwind CSS](https://tailwindcss.com/) by Tailwind Labs.
-- [Lucide Icons](https://lucide.dev/) for UI iconography.
-- [Vitest](https://vitest.dev/) for unit and integration testing.
-- [Zod](https://zod.dev/) for TypeScript-first schema declaration and validation."# eve" 
+EventCraft AI — Plan Smarter. Organize Better. Celebrate More.
+
+
+
+⋮⋮⋮⋮
